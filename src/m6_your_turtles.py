@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   You should have RUN the  m4e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -30,3 +30,25 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 import rosegraphics as rg
 window = rg.TurtleWindow()
 marlow = rg.SimpleTurtle('turtle')
+cindy = rg.SimpleTurtle('turtle')
+marlow.pen = rg.Pen('green', 5)
+cindy.pen = rg.Pen('midnight blue', 10)
+marlow.speed = 20
+cindy.speed = 20
+size = 300
+for k in range(8):
+    marlow.draw_circle(size)
+    marlow.pen_up()
+    marlow.right(45)
+    marlow.forward(10)
+    marlow.pen_down()
+    cindy.draw_regular_polygon(8,100)
+    cindy.pen_up()
+    cindy.left(45)
+    cindy.backward(10)
+    cindy.pen_down()
+window.close_on_mouse_click()
+
+
+
+
