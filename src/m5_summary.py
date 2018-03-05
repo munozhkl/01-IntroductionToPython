@@ -29,7 +29,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 ###############################################################################
 import rosegraphics as rg
 window = rg.TurtleWindow()
-charlie = rg.SimpleTurtle()
+charlie = rg.SimpleTurtle('turtle')
 charlie.pen = rg.Pen('red', 20)
 charlie.forward(50)
 charlie.right(90)
